@@ -3,30 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🔥 Hindi Anime World – हिंदी में ऐनीमे</title>
-  <meta name="description" content="Watch free Hindi dubbed anime like Prison School and more. Fast streaming, YouTube links, Telegram updates – सब कुछ एक ही जगह।">
-  <meta name="keywords" content="Hindi anime, anime in Hindi, dubbed anime, watch anime India, free anime streaming, Prison School Hindi, हिंदी ऐनीमे">
+  <title>🔥 Hindi Anime World – Watch Free Hindi Dubbed Anime</title>
+  <meta name="description" content="हिंदी में ऐनीमे देखें – Prison School और भी बहुत कुछ! Free हिंदी डब ऐनीमे यहीं पाएं।">
+  <meta name="keywords" content="Hindi anime, anime in Hindi, dubbed anime, watch anime India, free anime streaming, Prison School Hindi">
   <meta name="author" content="EssaKing">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="🔥 Hindi Anime World – Watch Hindi Dubbed Anime Free" />
   <meta property="og:description" content="Free anime in Hindi. Fast, clean, and mobile-friendly. Watch dubbed anime episodes online or join our Telegram." />
-  <meta property="og:image" content="https://i.ibb.co/3yK4w6K/logo.png" />
+  <meta property="og:image" content="https://i.ibb.co/cS7JHG9/8cfeed5fef181d8bb654f99ace2c2421-Picsart-Background-Remover.png" />
   <meta property="og:url" content="https://essaking.github.io/-Hindi-Anime-World-/" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://essaking.github.io/-Hindi-Anime-World-/" />
-  <link rel="icon" href="https://i.ibb.co/3yK4w6K/logo.png" />
+  <link rel="icon" type="image/png" href="https://i.ibb.co/cS7JHG9/8cfeed5fef181d8bb654f99ace2c2421-Picsart-Background-Remover.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- Header -->
   <header>
-    <img class="logo" src="https://i.ibb.co/3yK4w6K/logo.png" alt="Anime Logo" />
+    <img class="logo" src="https://i.ibb.co/cS7JHG9/8cfeed5fef181d8bb654f99ace2c2421-Picsart-Background-Remover.png" alt="Anime Logo" />
     <span>🔥 Hindi Anime World</span>
   </header>
 
-  <!-- Content -->
+  <!-- Main Content -->
   <div class="overlay">
-    <h1>📺 Watch Free Hindi Dubbed Anime | हिंदी में ऐनीमे देखें</h1>
+    <h1>📺 Watch Free Hindi Dubbed Anime / फ्री हिंदी डब ऐनीमे देखें</h1>
     <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()" />
 
     <div class="anime-grid" id="animeList">
@@ -70,22 +71,22 @@
   <!-- JavaScript -->
   <script>
     function showLink(button) {
-      const card = button.parentElement;
-      const linkBox = card.querySelector(".download-box");
+      const parent = button.parentElement;
+      const box = parent.querySelector(".download-box");
+      const telegram = parent.querySelector(".telegram-link");
       
-      if (linkBox) {
-        linkBox.style.display = "block";
-        
-        const downloadLink = linkBox.querySelector("a");
-        if (downloadLink) {
-          downloadLink.addEventListener("click", function () {
+      if (box) {
+        box.style.display = "block";
+
+        const downloadBtn = box.querySelector("a");
+        if (downloadBtn) {
+          downloadBtn.addEventListener("click", () => {
             setTimeout(() => {
-              const telegramLink = card.querySelector(".telegram-link");
-              if (telegramLink) {
-                telegramLink.style.display = "block";
+              if (telegram) {
+                telegram.style.display = "inline-block";
               }
-            }, 1000); // Show after 1 second
-          }, { once: true });
+            }, 1000);
+          });
         }
       }
     }
@@ -93,7 +94,6 @@
     function filterAnime() {
       const input = document.getElementById("search").value.toLowerCase();
       const cards = document.querySelectorAll(".anime-card");
-      
       cards.forEach(card => {
         const title = card.querySelector("h3").innerText.toLowerCase();
         card.style.display = title.includes(input) ? "block" : "none";
