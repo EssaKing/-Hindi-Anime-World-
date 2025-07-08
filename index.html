@@ -1,104 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🔥 Hindi Anime World – Watch Free Hindi Dubbed Anime</title>
-  <meta name="description" content="हिंदी में ऐनीमे देखें – Prison School और भी बहुत कुछ! Free हिंदी डब ऐनीमे यहीं पाएं।">
-  <meta name="keywords" content="Hindi anime, anime in Hindi, dubbed anime, watch anime India, free anime streaming, Prison School Hindi">
+  <title>🔥 Hindi Anime World – Watch Hindi Dubbed Anime Free</title>
+  <meta name="description" content="🔥 हिंदी डब ऐनीमे देखें – Prison School और भी बहुत कुछ।">
+  <meta name="keywords" content="Hindi anime, Hindi dubbed, anime India, free anime, anime in Hindi">
   <meta name="author" content="EssaKing">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="🔥 Hindi Anime World – Watch Hindi Dubbed Anime Free" />
-  <meta property="og:description" content="Free anime in Hindi. Fast, clean, and mobile-friendly. Watch dubbed anime episodes online or join our Telegram." />
+  <meta property="og:description" content="Free anime in Hindi. Mobile-friendly. Watch dubbed anime or join Telegram." />
   <meta property="og:image" content="https://i.ibb.co/cS7JHG9/8cfeed5fef181d8bb654f99ace2c2421-Picsart-Background-Remover.png" />
   <meta property="og:url" content="https://essaking.github.io/-Hindi-Anime-World-/" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://essaking.github.io/-Hindi-Anime-World-/" />
-  <link rel="icon" type="image/png" href="https://i.ibb.co/cS7JHG9/8cfeed5fef181d8bb654f99ace2c2421-Picsart-Background-Remover.png" />
+
+  <!-- ✅ NEW Favicon -->
+  <link rel="icon" type="image/png" href="https://essaking.github.io/-Hindi-Anime-World-/assets/newlogo.png" />
+
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <img class="logo" src="https://i.ibb.co/cS7JHG9/8cfeed5fef181d8bb654f99ace2c2421-Picsart-Background-Remover.png" alt="Anime Logo" />
-    <span>🔥 Hindi Anime World</span>
-  </header>
-
-  <!-- Main Content -->
-  <div class="overlay">
-    <h1>📺 Watch Free Hindi Dubbed Anime / फ्री हिंदी डब ऐनीमे देखें</h1>
-    <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()" />
-
-    <div class="anime-grid" id="animeList">
-
-      <!-- Anime Card 1 -->
-      <div class="anime-card">
-        <div class="card-bg" style="background-image: url('https://i.ebayimg.com/images/g/83YAAOSwc0dgAQvL/s-l1600.webp');"></div>
-        <div class="card-content">
-          <h3>Prison School [Hindi Dubbed]</h3>
-          <p>All Episodes</p>
-          <button class="button" onclick="showLink(this)">I Subscribed – Show Link</button>
-          <div class="download-box">
-            <a href="https://www.youtube.com/@DisneyDock" target="_blank">📥 SUBSCRIBE & get link</a>
-          </div>
-          <a class="telegram-link" href="https://web.telegram.org/k/#@PrisonSchool_In_Hindi_Dub" target="_blank">Join Telegram for updates</a>
-        </div>
-      </div>
-
-      <!-- Anime Card 2 -->
-      <div class="anime-card">
-        <div class="card-bg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1640728808i/59963266.jpg');"></div>
-        <div class="card-content">
-          <h3>Worthless Appraiser Class [Hindi Dub]</h3>
-          <p>[Hindi-Eng-Jap] Triple Audio [2025] [Episode 01-02 Added]</p>
-          <button class="button" onclick="showLink(this)">I Subscribed – Show Link</button>
-          <div class="download-box">
-            <a href="https://www.youtube.com/@DisneyDock" target="_blank">📥 SUBSCRIBE & get link</a>
-          </div>
-          <a class="telegram-link" href="https://animahd.com/even-given-the-worthless-appraiser-class-im-actually-the-strongest-season-1-hindi-dub-org" target="_blank">Watch on AnimaHD</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Hindi Anime World. All rights reserved. | Powered by Anime Fans 🔥</p>
-  </footer>
-
-  <!-- JavaScript -->
-  <script>
-    function showLink(button) {
-      const parent = button.parentElement;
-      const box = parent.querySelector(".download-box");
-      const telegram = parent.querySelector(".telegram-link");
-      
-      if (box) {
-        box.style.display = "block";
-
-        const downloadBtn = box.querySelector("a");
-        if (downloadBtn) {
-          downloadBtn.addEventListener("click", () => {
-            setTimeout(() => {
-              if (telegram) {
-                telegram.style.display = "inline-block";
-              }
-            }, 1000);
-          });
-        }
-      }
-    }
-
-    function filterAnime() {
-      const input = document.getElementById("search").value.toLowerCase();
-      const cards = document.querySelectorAll(".anime-card");
-      cards.forEach(card => {
-        const title = card.querySelector("h3").innerText.toLowerCase();
-        card.style.display = title.includes(input) ? "block" : "none";
-      });
-    }
-  </script>
-</body>
-</html>
+  <style>
+    body { font-family: Arial, sans-serif; background: #111; color: white; margin: 0; padding: 0; }
+    header { background: #222; display: flex; align-items: center; padding: 10px; }
+    header .logo { height: 50px; margin-right: 10px; border-radius: 50%; }
+    .overlay { padding: 20px; }
+    h1 { font-size: 1.8rem; margin-bottom: 20px; }
+    .anime-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px
